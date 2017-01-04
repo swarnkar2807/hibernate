@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+
+<!DOCTYPE hibernate-mapping PUBLIC   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name="com.hibernate.pojo.Employee" table="employee5" >
+		<id name="empId" column="emp_id">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="empName" column="emp_name" type="string" />
+		<property name="empDepartment" column="emp_department"></property>
+
+		<joined-subclass name="com.hibernate.pojo.RegularEmployee" table="regular_employee5">
+		<key column="eid"></key> 
+			<property name="empSalary" column="emp_salary"></property>
+			<property name="empBonus" column="emp_bonus"></property>
+		</joined-subclass>
+
+
+		<joined-subclass name="com.hibernate.pojo.ContractEmployee" table="contract_employee5">
+		<key column="eid"></key> 
+			<property name="empPayPerHour" column="emp_pay_per_hour"></property>
+			<property name="empDurationInMonth" column="emp_duration_in_month"></property>
+		</joined-subclass>
+
+	</class>
+
+
+</hibernate-mapping>  

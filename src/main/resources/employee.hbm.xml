@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+<class name="com.hibernate.pojo.Employee1" table= "employee">
+	<id name="empId" column="emp_id">
+		<generator class="increment"/>
+	</id>
+	<property name="empName" column="emp_name" type="string"/>
+	<property name="empDepartment"  column="emp_department"></property>
+
+</class>
+
+</hibernate-mapping>
