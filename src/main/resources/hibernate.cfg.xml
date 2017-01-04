@@ -22,7 +22,7 @@
 <!-- Related to mapping START -->
 <!-- <mapping resource="employee.hbm.xml" /> -->
 <mapping resource="employee_hierarchy.hbm.xml" />
-
+<mapping resource="question-list.hbm.xml"/>
 
 <mapping class="annotation.hibernate.Employee"/> 
 <mapping class="annotation.hibernate.RegularEmployee"/>

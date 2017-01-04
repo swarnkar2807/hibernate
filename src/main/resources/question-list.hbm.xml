@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+ 	<class name="hibernate.collection.listmapping.QuestionList" table="question_list">
+ 		<id name="qId">
+ 			<generator class="increment"/>
+ 		</id>
+ 		<property name="qName"></property>
+ 		
+ 		<list name="answer" table="ans_list">
+ 			<key column="qaId"></key>
+ 			<index column="type"></index>
+ 			<element column="answer" type="string"></element>
+<!-- 			<one-to-many class="hibernate.collection.listmapping.AnswerList"></one-to-many> -->
+ 		</list>
+ 	</class>
+</hibernate-mapping>
