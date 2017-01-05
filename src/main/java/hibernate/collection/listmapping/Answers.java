@@ -1,7 +1,8 @@
 package hibernate.collection.listmapping;
 
-public class AnswerList {
+public class Answers {
 
+	private int id;
 	private int ansId;
 	private String ansString;
 	private String posterName;
@@ -24,6 +25,19 @@ public class AnswerList {
 	public void setPosterName(String posterName) {
 		this.posterName = posterName;
 	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	@Override
+	public String toString() {
+		return "Answers [id=" + id + ", ansId=" + ansId + ", ansString=" + ansString + ", posterName=" + posterName
+				+ "]";
+	}
+	
 	
 	
 	

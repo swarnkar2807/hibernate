@@ -2,10 +2,10 @@ package hibernate.collection.listmapping;
 
 import java.util.List;
 
-public class QuestionList {
+public class Questions {
 	private int qId;
 	private String qName;
-	private List<String> answer;
+	private List<Answers> answer;
 	public int getqId() {
 		return qId;
 	}
@@ -18,15 +18,15 @@ public class QuestionList {
 	public void setqName(String qName) {
 		this.qName = qName;
 	}
-	public List<String> getAnswer() {
+	public List<Answers> getAnswer() {
 		return answer;
 	}
-	public void setAnswer(List<String> answer) {
+	public void setAnswer(List<Answers> answer) {
 		this.answer = answer;
 	}
 	@Override
 	public String toString() {
-		return "Question [qId=" + qId + ", qName=" + qName + ", answer=" + answer + ", toString()=" + super.toString()
+		return "Questions [qId=" + qId + ", qName=" + qName + ", answer=" + answer + ", toString()=" + super.toString()
 				+ "]";
 	}
 	 
