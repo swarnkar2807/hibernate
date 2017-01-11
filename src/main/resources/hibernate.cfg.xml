@@ -20,13 +20,16 @@
 <!-- Related to hibernate properties END -->
  
 <!-- Related to mapping START -->
-<!-- <mapping resource="employee.hbm.xml" /> -->
-<mapping resource="employee_hierarchy.hbm.xml" />
-<mapping resource="question-list.hbm.xml"/>
+<mapping resource="employee.hbm.xml" />
+<!-- <mapping resource="employee_hierarchy.hbm.xml" /> -->
+<!-- <mapping resource="question-list.hbm.xml"/> -->
+<!-- <mapping resource="question-m-m.hbm.xml"/>   -->
+<!--     <mapping resource="user-m-m.hbm.xml"/>   -->
+<!--         <mapping resource="employee-component.hbm.xml"/>   -->
 
-<mapping class="annotation.hibernate.Employee"/> 
-<mapping class="annotation.hibernate.RegularEmployee"/>
-<mapping class="annotation.hibernate.ContractEmployee"/>
+<!-- <mapping class="annotation.hibernate.Employee"/>  -->
+<!-- <mapping class="annotation.hibernate.RegularEmployee"/> -->
+<!-- <mapping class="annotation.hibernate.ContractEmployee"/> -->
 
 <!-- Related to the mapping END -->
  

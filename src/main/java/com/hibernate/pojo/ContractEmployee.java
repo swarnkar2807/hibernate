@@ -20,10 +20,7 @@ public class ContractEmployee extends Employee{
 	@Override
 	public String toString() {
 		return "ContractEmployee [empPayPerHour=" + empPayPerHour + ", empDurationInMonth=" + empDurationInMonth
-				+ ", getEmpPayPerHour()=" + getEmpPayPerHour() + ", getEmpDurationInMonth()=" + getEmpDurationInMonth()
-				+ ", getEmpId()=" + getEmpId() + ", getEmpName()=" + getEmpName() + ", getEmpDepartment()="
-				+ getEmpDepartment() + ", getDiscriminatorValue()=" + getDiscriminatorValue() + ", toString()="
-				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+				+ ", toString()=" + super.toString() + "]";
 	}
 	
 	

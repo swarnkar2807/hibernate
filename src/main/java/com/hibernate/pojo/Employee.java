@@ -5,8 +5,14 @@ public class Employee {
 	private int empId;
 	private  String empName;
 	private  String empDepartment;
-	private String discriminatorValue;
+	private int version;
 	
+	public int getVersion() {
+		return version;
+	}
+	public void setVersion(int version) {
+		this.version = version;
+	}
 	public int getEmpId() {
 		return empId;
 	}
@@ -25,16 +31,10 @@ public class Employee {
 	public void setEmpDepartment(String empDepartment) {
 		this.empDepartment = empDepartment;
 	}
-	public String getDiscriminatorValue() {
-		return discriminatorValue;
-	}
-	public void setDiscriminatorValue(String discriminatorValue) {
-		this.discriminatorValue = discriminatorValue;
-	}
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", empName=" + empName + ", empDepartment=" + empDepartment
-				+ ", discriminatorValue=" + discriminatorValue + "]";
+		return "Employee [empId=" + empId + ", empName=" + empName + ", empDepartment=" + empDepartment + ", version="
+				+ version + "]";
 	}
 	
 	

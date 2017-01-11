@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <hibernate-mapping>
-	<class name="hibernate.collection.listmapping.Questions" table="question_list1">
+	<class name="hibernate.collection.listmapping.Questions_m_m" table="question_list1">
 		<id name="qId">
 			<generator class="increment" />
 		</id>
